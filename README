@@ -1,0 +1,116 @@
+# Expense Tracker Web Application
+
+## ✅ Project Description
+
+This is a full-stack **Expense Tracker Application** built using:
+- **Frontend**: React.js + Axios
+- **Backend**: Spring Boot + Spring Data JPA
+- **Database**: H2 (in-memory)
+
+💡 It allows you to:
+- Add new expenses
+- View all expenses
+- Delete expenses
+
+---
+
+## ✅ Tech Stack
+
+- Frontend: React.js, Axios  
+- Backend: Spring Boot, Spring Data JPA  
+- Database: H2 (In-memory)  
+- Build Tools: Maven (Backend), npm (Frontend)
+
+---
+
+## ✅ Folder Structure
+
+expense-tracker/
+├── backend/
+│ ├── src/main/java/com/expensetracker/
+│ │ ├── controller/
+│ │ │ ├── HomeController.java
+│ │ │ └── ExpenseController.java
+│ │ ├── model/Expense.java
+│ │ ├── repository/ExpenseRepository.java
+│ │ └── ExpenseTrackerApplication.java
+│ ├── src/main/resources/application.properties
+│ └── pom.xml
+│
+├── frontend/
+│ ├── src/App.js
+│ └── package.json
+│
+├── README.md
+
+########################
+
+
+---
+
+## ✅ Backend Setup
+
+### 1️⃣ Install Java & Maven
+
+- Java 17 JDK
+- Maven installed and added to PATH
+
+---
+
+### 2️⃣ Run Backend
+
+```bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+
+
+✅ Backend will run on:
+
+http://localhost:8080/
+
+##################################
+
+3️⃣Sample Data Insertion
+
+Use curl or Postman to add a sample expense:
+
+curl -X POST http://localhost:8080/api/expenses \
+-H "Content-Type: application/json" \
+-d '{"description":"Groceries","amount":50,"category":"Food","date":"2025-09-12"}'
+
+#####################################
+
+✅ Frontend Setup
+
+1️⃣ Install Node.js and npm
+Ensure Node.js and npm are installed.
+
+2️⃣ Install Frontend Dependencies
+cd frontend
+npm install
+
+3️⃣ Start Frontend
+npm start
+
+✅ Frontend will run at:
+http://localhost:3000/
+
+
+/***********************************************/
+
+✅ What You Should See
+
+On visiting http://localhost:3000/:
+
+A table of expenses (if any exist).
+
+"Loading..." message during API call.
+
+"No expenses found" if DB is empty.
+
+✅ Author
+Vivek Dhanaji Kumbhar
+📧 Email: vivekkumbhar3310@gmail.com
+
+
